@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FAD</string>
+    <string name="titulo_formulario">Nuevo libro</string>
+    <string name="titulo_detalle">Detalle del libro</string>
 </resources>
