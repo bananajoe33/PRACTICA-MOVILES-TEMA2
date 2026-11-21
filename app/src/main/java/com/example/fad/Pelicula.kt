@@ -5,5 +5,6 @@ data class Pelicula(
     val titulo: String,
     val director: String,
     val genero: String,
-    val fecha: String
+    val valoracion: String,
+    val visto: Boolean
 )
