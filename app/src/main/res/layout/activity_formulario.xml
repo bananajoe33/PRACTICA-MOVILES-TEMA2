@@ -1,0 +1,108 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/edit_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/titulo"
+            android:inputType="textCapSentences"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edit_director"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/director"
+            android:inputType="textCapSentences"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/genero" />
+
+        <Spinner
+            android:id="@+id/spinner_genero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/generos"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/valoracion" />
+
+        <RadioGroup
+            android:id="@+id/grupo_valoracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/radio_bueno">
+
+            <RadioButton
+                android:id="@+id/radio_malo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/malo" />
+
+            <RadioButton
+                android:id="@+id/radio_bueno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bueno" />
+
+            <RadioButton
+                android:id="@+id/radio_excelente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/excelente" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/check_visto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/ya_lo_he_visto" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/boton_cancelar"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="@string/cancelar" />
+
+            <Button
+                android:id="@+id/boton_guardar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="@string/guardar" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
