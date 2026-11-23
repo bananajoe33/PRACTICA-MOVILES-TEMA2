@@ -8,7 +8,7 @@ object Videoclub {
     )
     private var ultimoId = peliculas.size
 
-    fun anadir(titulo: String, director, genero: String, valoracion: String, visto: Boolean) {
+    fun anadir(titulo: String, director: String, genero: String, valoracion: String, visto: Boolean) {
         ultimoId++
         peliculas.add(Pelicula(ultimoId, titulo, director, genero, valoracion, visto))
     }
